@@ -56,7 +56,7 @@ img {
 
 /* 시계 크기 */
 #clock {
-  font-size: 140px;
+  font-size: 120px;
   color: darkblue;
   cursor: pointer;
 }
