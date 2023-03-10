@@ -1,0 +1,129 @@
+body {
+	font-size: 13px !important;
+}
+
+/* 규정 카테고리 */
+#content #left.sidebar-fixed {
+    position: fixed;
+    top: 50px !important;
+    overflow-x: hidden;
+}
+
+#content.nav-fixed #left {
+    top: 4px;
+}
+
+#left {
+    width: 250px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #eee;
+    height: 893px;
+    overflow-x: visible;
+	overflow-y: hidden;
+    z-index: 10090;
+	outline: none;
+	display: block;
+}
+
+/* 규정 카테고리 */
+table#ruleTable tbody a {
+	font-size: 13px !important;
+}
+
+/* 규정집 본문 */
+#rule-content {
+	margin-top: 40px;
+}
+
+/* 검색 창 */
+div#findContainer {
+	float: right;
+	position:fixed;
+	right:10px;
+	top:40px;
+	width: 375px;
+	font-size: 12px;
+}
+
+div#findContainer input {
+	display: inline-block;
+	width: 300px !important;
+	height: 30px;
+	font-size: 13px;
+	padding-left:10px;
+	margin-bottom: 0px;
+	background-color: white;
+}
+
+div#findContainer button {
+	display: inline-block;
+	width: 65px;
+	height: 30px;
+	padding: 0px;
+	font-size: 13px;
+	margin-bottom: 0px;
+}
+
+/* 본문에서 찾은 키워드 */
+span.find {
+	background-color: #ff9632;
+	color: black;
+}
+
+em.find {
+	background-color: #ff9632;
+	color: black;
+}
+
+/* 검색 결과 */
+#keyword-list {
+	list-style-type: none;
+	margin-top: 2px;
+	padding: 0px;
+	height: auto;
+	max-height: 270px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background-color: #fff;
+	color: black;
+	width:99%;
+    border: 1px solid #404040;
+}
+
+#keyword-list .ui-selecting { 
+	background: #FECA40; 
+}
+
+#keyword-list .ui-selected {
+    background: #F39814;
+    color: white;
+}
+
+#keyword-list .ui-selected strong{
+    background: #F39814;
+    color: black;
+}
+
+#keyword-list li {
+    margin: 0px;
+    padding: 0.4em;
+    font-size: 13px;
+    height: 33px;
+	cursor: pointer;
+}
+
+#keyword-list li strong {
+	font-weight: bold;
+	color: #F39814;
+}
+
+
+.ui-widget-content {
+    border: 0px solid #404040;
+}
+
+.hidden {
+	display:none;
+}

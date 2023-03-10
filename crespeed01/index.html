@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>규정집</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css" />
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/vader/jquery-ui.css" />
+        <link rel="stylesheet" href="css/style.css" />
+
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container-fluid nav-fixed" id="content">
+			<div
+				id="left"
+				class="ui-resizable sidebar-fixed hasScroll"
+				tabindex="5000"
+			>
+				<div class="box box-bordered">
+					<div id="divRuleList" class="subnav no-margin">
+						<div class="box-content nopadding">
+							<div class="dataTables_scrollBody" style="overflow: auto; height: 750px; width: 100%;">
+								<table id="ruleTable" data-nosort="" class="table table-hover table-nomargin dataTable ruleTable table-bordered dataTable-scroll-y no-footer" role="grid" aria-describedby="ruleTable_info" style="width: 100%;">
+									<thead class="hidden">
+										<tr role="row" style="height: 0px;">
+											<th class="sorting" aria-controls="ruleTable" rowspan="1" colspan="1" style="width: 0px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="규정명: activate to sort column ascending">
+												<div class="dataTables_sizing" style="height:0;overflow:hidden;">규정명</div>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr role="row" class="odd"><td><a class="rulelink" href="#rule_01.html" >학교법인 연세대학교 정관</a></td></tr>
+										<tr role="row" class="even"><td><a class="rulelink" href="#rule_02.html" >연세대학교 학칙</a></td></tr>
+									</tbody>
+								</table>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="main" style="margin-left:250px">
+				<div class="container-fluid">
+					<div class=""row">
+						<div class=""box box="bordered box-color">
+							<a id="top0"></a>
+							<div id="findContainer">
+								<form id="findForm">
+									<input id="keyword-input" type="text" required autocomplete="off"> <button type="submit">검색</button>
+									<ol id="keyword-list" class="hidden">
+									</ol>
+								</form>
+							</div>
+							<div id="rule-content" class="box-content nopadding"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/load_rules.js"></script>
+		<script src="js/find_rules.js"></script>
+	</body>
+</html>
